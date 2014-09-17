@@ -89,6 +89,7 @@ class OptionsTest extends DBTestCase
         parent::setUp( );
         
         $this->options = new Options( self::$db );
+        
     }
     
     /**
