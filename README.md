@@ -37,6 +37,24 @@ Alternatively, just copy the contents of the RawOptions folder into somewhere th
 
 use RawPHP\RawOptions\Options;
 
+// IDatabase instance
+$database = new Database( );
+$database->init( $config );
+
+// instantiate a new instance of options service
+$options = new Options( $database );
+
+// add a new option
+$options->addOption( $key, $value );
+
+// update an existing option
+$options->updateOption( $key, $value );
+
+// get an option
+$options->getOption( $key );
+
+// delete an option
+$options->deleteOption( $key );
 ```
 
 ## License
