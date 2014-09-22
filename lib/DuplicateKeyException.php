@@ -35,7 +35,7 @@
 
 namespace RawPHP\RawOptions;
 
-use RawPHP\RawBase\RawException;
+use RawPHP\RawBase\Exceptions\RawException;
 
 /**
  * The duplicate key exception class.
