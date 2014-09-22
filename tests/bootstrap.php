@@ -23,7 +23,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  * 
- * PHP version 5.4
+ * PHP version 5.3
  * 
  * @category  PHP
  * @package   RawPHP/RawOptions
@@ -33,7 +33,7 @@
  * @link      http://rawphp.org/
  */
 
-use RawPHP\RawDatabase\Database;
+use RawPHP\RawDatabase\Mysql;
 use RawPHP\RawYaml\Yaml;
 
 defined( 'DS' )             || define( 'DS', DIRECTORY_SEPARATOR );
@@ -42,14 +42,18 @@ defined( 'SUPPORT_DIR' )    || define( 'SUPPORT_DIR', TEST_DIR . '_support' . DS
 defined( 'OUTPUT_DIR' )     || define( 'OUTPUT_DIR', TEST_DIR . '_output' . DS );
 defined( 'MIGRATIONS_DIR' ) || define( 'MIGRATIONS_DIR', dirname( dirname( __FILE__ ) ) 
                                             . DS . 'lib' . DS . 'migrations' );
+defined( 'TEST_LOCK_FILE' ) || define( 'TEST_LOCK_FILE', 'test.lock' );
 
 require_once dirname( dirname( __FILE__ ) ) . DS . 'vendor' . DS . 'autoload.php';
 
-$config = ( new Yaml( ) )->load( SUPPORT_DIR . 'config.yml' );
+$yaml = new Yaml( );
+$config = $yaml->load( SUPPORT_DIR . 'config.yml' );
 $config[ 'migration' ][ 'migration_path' ] = fixPath( $config[ 'migration' ][ 'migration_path' ] );
 
-$db = new Database( );
+$db = new Mysql( );
 $db->init( $config[ 'test_db' ] );
+
+
 
 echo PHP_EOL . PHP_EOL . '************* BOOTSTRAP ********************' . PHP_EOL . PHP_EOL;
 

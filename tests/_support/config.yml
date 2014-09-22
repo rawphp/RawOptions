@@ -50,9 +50,9 @@ test_db:
 ################################################################################ 
 
 migration:
-    migration_path:   %OUTPUT_DIR%
-    namespace:        RawPHP\RawOptions\Migrations
-    migration_table:  migrations
-    class_name_style: Migrator::STYLE_CAMEL_CASE
-    class_prefix:     M
-    overwrite:        FALSE
+    migration_path:      %OUTPUT_DIR%
+    migration_namespace: RawPHP\RawOptions\Migrations
+    migration_table:     migrations
+    class_name_style:    Migrator::STYLE_CAMEL_CASE
+    class_prefix:        M
+    overwrite:           FALSE

@@ -1,6 +1,8 @@
-# RawOptions - A Simple Session Wrapper Class for PHP Applications [![Build Status](https://travis-ci.org/rawphp/RawOptions.svg?branch=master)](https://travis-ci.org/rawphp/RawOptions)
+# RawOptions - A Simple Session Wrapper Class for PHP Applications
 
-[![Latest Stable Version](https://poser.pugx.org/rawphp/raw-options/v/stable.svg)](https://packagist.org/packages/rawphp/raw-options) [![Total Downloads](https://poser.pugx.org/rawphp/raw-options/downloads.svg)](https://packagist.org/packages/rawphp/raw-options) [![Latest Unstable Version](https://poser.pugx.org/rawphp/raw-options/v/unstable.svg)](https://packagist.org/packages/rawphp/raw-options) [![License](https://poser.pugx.org/rawphp/raw-options/license.svg)](https://packagist.org/packages/rawphp/raw-options)
+[![Build Status](https://travis-ci.org/rawphp/RawOptions.svg?branch=master)](https://travis-ci.org/rawphp/RawOptions)
+[![Latest Stable Version](https://poser.pugx.org/rawphp/raw-options/v/stable.svg)](https://packagist.org/packages/rawphp/raw-options) [![Total Downloads](https://poser.pugx.org/rawphp/raw-options/downloads.svg)](https://packagist.org/packages/rawphp/raw-options) 
+[![Latest Unstable Version](https://poser.pugx.org/rawphp/raw-options/v/unstable.svg)](https://packagist.org/packages/rawphp/raw-options) [![License](https://poser.pugx.org/rawphp/raw-options/license.svg)](https://packagist.org/packages/rawphp/raw-options)
 
 ## Package Features
 - Manage application options in the database through key->value pairs.
@@ -65,6 +67,9 @@ This package is licensed under the [MIT](https://github.com/rawphp/RawOptions/bl
 Please submit bug reports, suggestions and pull requests to the [GitHub issue tracker](https://github.com/rawphp/RawOptions/issues).
 
 ## Changelog
+
+#### 22-09-2014
+- Updated to PHP 5.3.
 
 #### 20-09-2014
 - Replaced php array configuration with yaml
