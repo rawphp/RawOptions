@@ -1,6 +1,6 @@
 # RawOptions - A Simple Session Wrapper Class for PHP Applications
 
-[![Build Status](https://travis-ci.org/rawphp/RawOptions.svg?branch=master)](https://travis-ci.org/rawphp/RawOptions)
+[![Build Status](https://travis-ci.org/rawphp/RawOptions.svg?branch=master)](https://travis-ci.org/rawphp/RawOptions) [![Coverage Status](https://coveralls.io/repos/rawphp/RawOptions/badge.png?branch=master)](https://coveralls.io/r/rawphp/RawOptions?branch=master)
 [![Latest Stable Version](https://poser.pugx.org/rawphp/raw-options/v/stable.svg)](https://packagist.org/packages/rawphp/raw-options) [![Total Downloads](https://poser.pugx.org/rawphp/raw-options/downloads.svg)](https://packagist.org/packages/rawphp/raw-options) 
 [![Latest Unstable Version](https://poser.pugx.org/rawphp/raw-options/v/unstable.svg)](https://packagist.org/packages/rawphp/raw-options) [![License](https://poser.pugx.org/rawphp/raw-options/license.svg)](https://packagist.org/packages/rawphp/raw-options)
 
